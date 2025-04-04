@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Drive Smart</string>
+    <string name="menu">Menu</string>
+    <string name="start_test">Начать тестирование</string>
+    <string name="txtCorrectScore">Вы ответили на %1$s из %2$s правилно</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Создать Аккаунт</string>
+    <string name="Yes">Да</string>
+    <string name="toggleLoginSignUpTextView">Уже есть аккаунт?</string>
+    <string name="or">- или войдите с помощью -</string>
+    <string name="home">Home</string>
+    <string name="completed">Пройденные</string>
+    <string name="book">Книга по вождению</string>
+    <string-array name="tests_name">
+        <item>Дорожние знаки</item>
+        <item>Закон дорожного движения</item>
+    </string-array>
+</resources>
