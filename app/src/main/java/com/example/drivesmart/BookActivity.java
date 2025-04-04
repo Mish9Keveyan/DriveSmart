@@ -17,6 +17,7 @@ public class BookActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book);
 
+
         ImageView back = findViewById(R.id.imageRule1);
         back.setOnClickListener(view -> finish());
 
