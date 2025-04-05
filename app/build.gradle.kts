@@ -49,5 +49,6 @@ dependencies {
     implementation(libs.picasso)
     implementation(libs.dotsindicator)
     implementation (libs.android.gif.drawable)
+    implementation (libs.photoview)
 
 }

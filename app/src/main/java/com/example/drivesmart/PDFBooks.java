@@ -1,6 +1,5 @@
 package com.example.drivesmart;
 
-import static android.content.Intent.getIntent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +9,8 @@ import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.github.chrisbanes.photoview.PhotoView;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -28,6 +29,8 @@ public class PDFBooks extends AppCompatActivity {
         pdfContainer = findViewById(R.id.pdfContainer);
         ImageView back = findViewById(R.id.imageRule1);
         back.setOnClickListener(view -> finish());
+
+
 
         int test_position = getIntent().getIntExtra("key_position", 0);
         String pdfFileName = (test_position == 0) ? "first.pdf" : "second.pdf";
@@ -62,9 +65,11 @@ public class PDFBooks extends AppCompatActivity {
             page.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY);
             page.close();
 
-            ImageView pageImage = new ImageView(this);
+            PhotoView pageImage = new PhotoView(this);
             pageImage.setImageBitmap(bitmap);
             pageImage.setAdjustViewBounds(true);
+            pageImage.setZoomable(true);
+            pageImage.setPadding(0, 16, 0, 16);
             pdfContainer.addView(pageImage);
         }
 
