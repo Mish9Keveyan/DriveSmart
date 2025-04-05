@@ -193,7 +193,7 @@ public class Trophies extends AppCompatActivity {
             TV2.setTextColor(getResources().getColor(R.color.bg_color));
             TV2.setText("75%");
         }
-        if (level2 >= 2) {
+        if (level2 >= 5) {
             v21.setBackgroundResource(R.color.white);
             v22.setBackgroundResource(R.color.white);
             v23.setBackgroundResource(R.color.white);

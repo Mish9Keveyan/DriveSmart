@@ -12,10 +12,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 
-//import com.example.learntodrive.CrossRoads.CrossRoadsActivity;
-//import com.example.learntodrive.Signs.TrafficSignsActivity;
-//import com.example.learntodrive.law.LawActivity;
-//import com.example.learntodrive.safeDrive.SafeDriveActivity;
+import com.example.drivesmart.CrossRoads.CrossRoadsActivity;
+import com.example.drivesmart.Signs.TrafficSignsActivity;
+import com.example.drivesmart.Law.LawActivity;
+import com.example.drivesmart.SafeDrive.SafeDriveActivity;
+
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -106,32 +107,32 @@ public class TestOptionActivity extends AppCompatActivity {
         findViewById(R.id.imageViewQuizOption).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
+                startActivity(new Intent(TestOptionActivity.this, MainActivity.class));
             }
         });
-//        cvTrafficSigns.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(TestOptionActivity.this, TrafficSignsActivity.class));
-//            }
-//        });
-//        cvCrossRoads.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(TestOptionActivity.this, CrossRoadsActivity.class));
-//            }
-//        });
-//        cvFirstHelp.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(TestOptionActivity.this, SafeDriveActivity.class));
-//            }
-//        });
-//        cvLaw.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(TestOptionActivity.this, LawActivity.class));
-//            }
-//        });
+        cvTrafficSigns.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(TestOptionActivity.this, TrafficSignsActivity.class));
+            }
+        });
+        cvCrossRoads.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(TestOptionActivity.this, CrossRoadsActivity.class));
+            }
+        });
+        cvFirstHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(TestOptionActivity.this, SafeDriveActivity.class));
+            }
+        });
+        cvLaw.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(TestOptionActivity.this, LawActivity.class));
+            }
+        });
     }
 }
