@@ -6,92 +6,12 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logo_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LearnToDrive"
         tools:targetApi="31">
-
-        <activity
-            android:name=".SafeDrive.SafeDriveActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".CrossRoads.CrossRoads1"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".CrossRoads.CrossRoads2"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".CrossRoads.CrossRoads3"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".CrossRoads.CrossRoads4"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Signs.ResultActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".CrossRoads.Result2"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".SafeDrive.Result3"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Law.Result4"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Law.LawActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Signs.TrafficSignsActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Signs.FirstLevelActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Signs.SecondLevelActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Signs.ThirdLevelActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Signs.FourthLevelActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".CrossRoads.CrossRoadsActivity"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".SafeDrive.SafeDrive1"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Law.Law1"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Law.Law2"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Law.Law3"
-            android:exported="false"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Law.Law4"
-            android:exported="false"
-            android:screenOrientation="portrait" />
 
         <activity
             android:name=".Activity_splash_screen"
@@ -100,33 +20,42 @@
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".BookActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".NoInternet"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".PDFBooks"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".RulesActivity"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".TestOptionActivity"
-            android:noHistory="true"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".Trophies"
-            android:screenOrientation="portrait" />
 
+        <activity android:name=".MainActivity" android:screenOrientation="portrait" />
+        <activity android:name=".NoInternet" android:screenOrientation="portrait" />
+        <activity android:name=".RulesActivity" android:screenOrientation="portrait" />
+        <activity android:name=".BookActivity" android:screenOrientation="portrait" />
+        <activity android:name=".PDFBooks" android:screenOrientation="portrait" />
+        <activity android:name=".TestOptionActivity" android:screenOrientation="portrait" android:noHistory="true" />
+        <activity android:name=".Trophies" android:screenOrientation="portrait" />
+
+        <activity android:name=".SafeDrive.SafeDriveActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".SafeDrive.SafeDrive1" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".SafeDrive.Result3" android:exported="false" android:screenOrientation="portrait" />
+
+        <activity android:name=".CrossRoads.CrossRoadsActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".CrossRoads.CrossRoads1" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".CrossRoads.CrossRoads2" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".CrossRoads.CrossRoads3" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".CrossRoads.CrossRoads4" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".CrossRoads.Result2" android:exported="false" android:screenOrientation="portrait" />
+
+        <activity android:name=".Law.LawActivity" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".Law.Law1" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".Law.Law2" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".Law.Law3" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".Law.Law4" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".Law.Result4" android:exported="false" android:screenOrientation="portrait" />
+
+        <activity android:name=".Signs.TrafficSignsActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Signs.FirstLevelActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Signs.SecondLevelActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Signs.ThirdLevelActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Signs.FourthLevelActivity" android:screenOrientation="portrait" />
+        <activity android:name=".Signs.ResultActivity" android:exported="false" android:screenOrientation="portrait" />
 
     </application>
 
